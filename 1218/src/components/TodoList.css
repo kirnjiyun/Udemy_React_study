@@ -9,7 +9,6 @@
     padding: 15px 0px;
 }
 .TodoList > input:focus {
-    outline: none;
     border-bottom: 1px solid plum;
 }
 .TodoList > h6 {
