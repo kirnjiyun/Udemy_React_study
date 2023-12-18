@@ -5,17 +5,22 @@ import "./App.css";
 import { useState, useRef } from "react";
 
 const mockData = [
-    { id: 0, isDone: true, content: "뽀득", createData: new Date().getTime() },
+    {
+        id: 0,
+        isDone: true,
+        content: "뽀득뽀득 소리나게 씻기",
+        createData: new Date().getTime(),
+    },
     {
         id: 1,
         isDone: false,
-        content: "밥 맛있게 먹기",
+        content: "감바스 해먹기 냠",
         createData: new Date().getTime(),
     },
     {
         id: 2,
         isDone: true,
-        content: "방 정리하기",
+        content: "레그프레스 10개씩 4세트 뿌셔뿌셔!",
         createData: new Date().getTime(),
     },
 ];
@@ -36,7 +41,7 @@ function App() {
         <div className="App">
             <Header />
             <TodoEditor onCreate={onCreate} />
-            <TodoList />
+            <TodoList todos={todos} />
         </div>
     );
 }
