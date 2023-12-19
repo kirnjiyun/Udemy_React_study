@@ -1,11 +1,13 @@
-import React from "react";
-import { useReducer } from "react";
+import React, { useReducer } from "react";
 
 function reducer(state, action) {
-    if (action.type === "DECREASE") {
-        return state - action.data;
-    } else if (action.type === "INCREASE") {
-        return state + action.data;
+    switch (action.type) {
+        case "DECREASE":
+            return state - action.data;
+        case "INCREASE":
+            return state + action.data;
+        default:
+            return state;
     }
 }
 
