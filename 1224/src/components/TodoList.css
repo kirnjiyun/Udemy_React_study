@@ -1,0 +1,21 @@
+.TodoList {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.TodoList > input {
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+}
+.TodoList > input:focus {
+    border-bottom: 1px solid plum;
+}
+.TodoList > h6 {
+    color: plum;
+}
+.TodoList > .todos_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
