@@ -32,7 +32,7 @@ export default function Searchbar({ q }) {
                 value={search}
                 onKeyDown={onKeyDown}
                 onChange={onChangeSearch}
-                placeholder="검색어를 입력하세요..."
+                placeholder="검색어를 입력하세용 영어로!!"
             />
             <button onClick={onClickSearch}>검색</button>
         </div>
